@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Resume</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<style>
+		
+		.header-img{
+		       	background-image: url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg" );
+		       	height: 70vh;
+		       	opacity:0.8;
+		       	padding-top: 1.2rem;
+		       	background-size: cover;
+		       	background-position: center;
+		       	background-attachment: fixed;
+		
+		       }
+		       
+		       .nav li {
+		       	
+		       	display: inline-block;
+		        padding: 2.5%;
+		       	margin:5px 5px 0px 0px;
+		       	font-size: 1rem;
+                z-index: 1;
+		       
+		         
+		       }
+		       .center{
+		       	text-align: center;
+		       }
+		
+		       .nav li a{
+		       	color:white;
+		       	text-decoration: none;
+		       	font-size: 20px;
+		        transition:background-color 0s ease-in,font-size 0.5s ease-in;
+		       }
+		       .nav li a:hover{
+		       	color:black;
+		       	font-weight: 3px;
+		       	border-bottom:3px solid black;
+		       	background-color: grey;
+		       	font-size: 2.5rem;
+
+		       }
+		       .name{
+		       	font-size:3rem;
+		       	color: white;
+		       	font-weight: bolder;
+		       	text-decoration: bold;
+		       	margin:50px 0px;
+		       	letter-spacing: 0.1rem;
+		
+		       }
+		       .social-link li{
+		       	display: inline-block;
+		       }
+		       .social-link li a i,.social{
+		         /* margin:5px 5px 0px 0px;*/
+		         display: inline-block;
+		         font-size: 2.5rem;
+		         margin:4px 10px 10px 10px;
+		         color:white;   
+		         transition:background-color 0s ease-in-out,font-size 0.5s ease-in-out;      
+		        }
+		        .social-link li a i:hover{
+		        	box-shadow: 0px 0px 10px 20px rgba(100,100,255,0.8);
+		        	border-radius: 50%;
+		        	background-color: grey;
+		        	font-size: 3rem;
+		        }
+		        .img2{
+		        	height: 15rem;
+		        	width:15rem;
+		        	background-position: center;
+		        	background-size: cover;
+		        	background-image: url("https://media-exp2.licdn.com/dms/image/C5103AQHrcWBZy7z1Jw/profile-displayphoto-shrink_800_800/0?e=1585180800&v=beta&t=UIwwPZneQnkOfSl5IZr60opaw4g1G262FqepbNQhP40");
+		        	border-radius: 100%;
+		        	box-shadow: 4px 5px 4px 3px #898e94;
+		        	position: absolute;
+		        	left:39%;
+		        	top:57%;
+		        	transition:ease-in ;
+		        }
+		        .img2:hover{
+                 height: 16rem;
+                 width: 16rem;
+                 box-shadow: 5px 10px 4px 3px #898e94;
+		        }
+		        #about{
+		        	position: relative;
+		        	left: 8px;
+		        	top:300px;
+		        	font-size: 1.2rem;
+		          margin: 5px 10px 0px 10px;
+		        	
+		        }
+		        #skill{
+		      	width:100%;
+		      	height: 87%;
+		      	background-color: lightgrey;
+		      	background-size: cover;
+		      	position:relative;
+		      	left:5px;
+		      	top:350px;
+		      	}
+		        .skill-heading ,.experience-heading,.education-heading,.portfolio-heading,.contacts-heading{
+		         color:blue;
+		         padding: 3px;
+		         font-size: 2rem;
+		         font-family: cursive;
+		         font-weight: bold;
+		        
+		        }
+		        .fas{
+		        	 margin:5px 20px 5px 5px;
+		        } 
+		        
+		        .progress{
+		        	width:10%;
+		        	height:7%;
+		        	font-size: 1rem;
+		        	border-radius: 2.25rem;
+		        	border: 16px black;
+		
+		        	
+		        }
+		        .progress-bar{    
+		           	
+		        	background-color: ;
+		        	width:90%;
+		
+		            
+		        	
+		        }
+		        #experience{
+		            
+		        	position: relative;
+		        	left:5px;
+		        	top:350px;
+		
+		
+		
+		        }
+		        .timeline,.Education-timeline{
+		          position:relative;
+		          top:10px;
+		          left:10%;
+		          width:80%;
+		          border:2px solid black;
+		        }
+		        .box,.Education-box{
+		          position: relative;
+		          width:40%;
+		          height: 30%;
+		          left:5%;
+		          min-height: 150px;
+		          margin:5px;
+		          border:2px solid black;
+		          background-color: #226bbb;
+		          color: #fe7c0f;
+		         
+		        }
+		
+		        .Education-box:nth-child(odd),.box:nth-child(odd){
+		          left:55%;
+		          background-color: #7de494;
+		          color: #2e13d8;
+		          
+		   
+		        }
+		        .box img,.Education-box img{
+		        	float:right;
+		        }
+		        .box img:nth-child(2n),.Education-box img:nth-child(2n){
+		        	float:left;
+		        }
+		        
+		        .box:nth-child(2n)::after,.Education-box:nth-child(2n)::after{
+		          content:"";
+		          position: absolute;
+		          right:-13.5%;
+		          top:50%;
+		          height:10px;
+		          width: 10px;
+		          border-radius: 50%;
+		          background-color: #495057;
+		          z-index: 1;
+
+		          
+		        } 
+		        .box:nth-child(2n+1)::after,.Education-box:nth-child(2n+1)::after{
+		          content:"";
+		          position: absolute;
+		          left:-14.8%;
+		          top:50%;
+		          height:10px;
+		          width: 10px;
+		          border-radius: 50%;
+		          background-color:#495057 ;
+		          z-index: 1;
+		          
+		        }
+		        .divider,.Education-divider{
+		          position:absolute;
+		          left:50%;
+		          top:5%;
+		          height: 83%;
+		          width:0px;
+		          border:2px dashed #143dff;
+		          font-weight: bolder;
+		          z-index: 0.9;
+		        }
+		        .time-traveller,.Education-time-traveller{
+		          
+		          position: sticky;
+		          top:20%;
+		          right: 50%;
+		          color: black;
+		          transform: rotate(90deg);
+		
+		          z-index: 2;
+		
+		        }
+		       
+		        #education{
+		          position: relative;
+		          top:90%;
+		          background-color: lightgrey;
+		          height: 800px
+		        }
+		        #portfolio{
+		         position:relative;
+		          top:100%;
+		          
+		        }
+		        .portfolio-img{
+		          margin-top: 40px;
+		          display: inline-block;
+		          position:relative;		         
+		          top:10%;
+		          margin-left: 10%;
+
+		        }
+		       		
+		        #contacts{
+		          height:500px;
+		          position: relative;
+		          top:125%;
+		          background-image: linear-gradient(to right,#221b9a,#0d95e4)!important;
+		          color:white!important;
+		          font-size: 20px;
+		
+		        }
+		        #contacts span{
+		          position: absolute;
+		          left:60%;
+		          top:23%;
+		        }
+		        .contacts-heading{
+		          color:white;
+		
+		
+		        }
+		        .contacts-heading i{
+		          margin-right: 8px;
+		        }
+		        #contacts form{
+		          position: absolute;
+		          left:5%;
+		          top:23%;
+		        }
+		         form input,form textarea{
+		         margin:10px;
+		         background-color: transparent;
+		         text-decoration: none;
+		         border-bottom: 3px solid black;
+		         width:200px;
+		         text-align: center;
+		        }
+		        .social ul{
+		           position: absolute;
+		          left:40%;
+		          top:70%;
+		
+		        }
+		        .social li{
+		
+		          text-decoration: none;
+		          display:inline;
+		          font-size: 2rem;
+		          text-align: center;
+		        }
+		        .social li i,#contacts span i{
+		        	color:black;
+		        	margin-right:10px;
+		        }
+		        @media screen and (max-width:700px){
+		        	.small-screen{
+		        		opacity: 1;
+		        		position:relative;
+		        		left:10%;
+		        		top:30px;
+		        		font-size: 2rem;
+		        	}
+		        	
+		        	.divider,.Education-divider{
+		        		left:12px;
+		        	}
+		        	.box,.Education-box{
+		        		left:14%!important;
+		        		width:80%;
+		        	}
+		        	
+		        	.box:nth-child(2n+1)::after,.Education-box:nth-child(2n+1)::after{
+		        		left:-16.8%;
+		        	}
+		        	.box:nth-child(2n)::after,.Education-box:nth-child(2n)::after{
+		        		left:-17%;
+		        	}
+		        	#modal{
+		        		opacity: 1;
+		        		width: 40%;
+		        		height: 60%;
+		        		position: relative;
+		        		left:10%;
+		        		top:15px;
+		        		background-color: black;
+		        		color:white;
+		        		font-size: 1rem;
+		        		border:;
+
+
+		        	}
+		        	#modal .nav li {
+		        		margin: 10px;
+		        		padding: 6px;
+		        		display: inline-block;
+		        		text-decoration: none;
+		        		border:3px solid white;
+		        		flex:center;
+		        		
+		        	}
+		        	#modal ul li a{
+		        		text-decoration: none;
+		        		color: white;
+		        		
+
+		        	}
+		        	 #portfolio img{
+                      float: center;
+		        }
+		        }
+
+
+	</style>
+</head>
+
+<body>
+	<header class="header-img">
+		<div>
+			<nav>
+				<div class="small-screen" href="#modal"><button ><i class="fas fa-align-justify"></i></button>
+				<div >
+				<ul class="horizontal-list nav center">
+					<li><a href="#">Home</a>
+					</li>
+					<li><a href="#about">About</a>
+					</li>
+					<li><a href="#skill">Skills</a>
+					</li>
+					<li><a href="#experience">Experience</a>
+					</li>
+					<li><a href="#education">Education</a>
+					</li>
+					<li><a href="#portfolio">Portfolio</a>
+					</li>
+					<li><a href="#contacts">Contacts</a>
+					</li>
+				</ul>
+				
+			</nav>
+				
+			<div class="name center">Vashisht Malik</div>
+			<ul class="social-link center">
+				<li><a href="https://stackexchange.com/users/13733624/vashi"><i class="fab fa-stack-overflow"></i></a>
+				</li>
+				<li><a href="https://github.com/Vashi050197"><i class="fab fa-github-square"></i></a>
+				</li>
+				<li><a href="https://in.linkedin.com/in/vashisth-malik" ><i class="fab fa-linkedin"></i></a>
+				</li>
+				<li><a href="https://www.facebook.com/vashu.malik.90"></i></a>
+				</li>
+				<li><a href="vashi.15je001780@ce.ism.ac.in"><i class="fab fa-google-plus-g"></i></a>
+				<li><a href="https://www.quora.com/profile/Vashisth-Malik"><i class="fab fa-quora"></i></a>
+				</li>
+			</ul>
+		</div>
+		<div class="img2"></div>
+		<section id="about">I have always been fascinated by Science, So I opted Science Side in my Intermediate and than Engineering. In 2012, I pass out High School From International Public School with Excellent 10 CGPA from the Same School I have done Intermediate and got 87.6% overall and 95/100 in Mathematics. After my intermediate, I have cleared one of the toughest Exam JEE (Joint Entrance Examination) With AIR-6678 and got Admission in Chemical Engineering from IIT(ISM) Dhanbad.</section>
+		<section id="skill">
+			<div class="skill-heading center">	<i class="fas fa-laptop-code"></i>SKILLS</div>
+			<div class="container">
+				<div class="progress" style="position:absolute;left:20%;top:30%;">
+					<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="background-color:orange ;">C++</div>
+				</div>
+				<div class="progress" style="position:absolute;left:40%;top:30%;">
+					<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="background-color: #ff6600;">Java</div>
+				</div>
+				<div class="progress" style="position:absolute;left:60%;top:30%;">
+					<div class="progress-bar progress-danger" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="background-color:#8822ff ;">HTML</div>
+				</div>
+				<div class="progress" style="position:absolute;left:80%;top:30%;">
+					<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="background-color: indego;">CSS</div>
+				</div>
+				<div class="progress" style="position:absolute;left:30%;top:45%;">
+					<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style=" background-color: orange;">Javascript</div>
+				</div>
+				<div class="progress" style="position:absolute;left:50%;top:45%;">
+					<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="background-color:#ff6600;">React.js</div>
+				</div>
+				<div class="progress" style="position:absolute;left:70%;top:45%;">
+					<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="background-color: #8822ff;">SQL</div>
+				</div>
+				<div class="progress" style="position:absolute;left:50%;top:60%">
+					<div class="progress-bar" role="progressbar" aria-valuenow="80%" aria-valuemin="0" aria-valuemax="100">Node.js</div>
+				</div>
+			</div>
+		</section>
+		<section id="experience">
+			<div class="experience-heading center">	<i class="fas fa-briefcase"></i>Work Experience
+				<div class="timeline">
+					<div class="divider">
+						<div class="time-traveller"><i class="fas fa-plane"></i>
+						</div>
+					</div>
+					<div class="box">
+
+					   <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/GAIL_Logo.svg/1200px-GAIL_Logo.svg.png" width="30%" height="30%" >
+					   <h4>GAIL India Ltd</h4>
+                       <h4>May 2018 To July 2018</h4>
+					   <h4>Internship</h4>
+
+					</div>
+					<div class="box">
+						<img src="" alt="" width="px" height=" px">
+					   <h4>Sunrise Technology</h4>
+                       <h4>Dec 2018 To Jan 2020</h4>
+					   <h4>C++ Training</h4>
+					</div>
+					<div class="box">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQwCoySfDbssrgAM6xihVWTXsFRV5lxO8IFgdIT2JjO1XKAtzOM" alt="" width="20%" height=" 20%">
+					   <h4>Coding Ninja</h4>
+                       <h4>Oct 2019 To Present</h4>
+					   <h4>Developer</h4>
+					</div>
+					<div class="box">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS7vEsEjaD7jCGcbBVuKnMlu_Q3m3c3Gwwzd4Cj_VwvsrcOGy6B" alt="" width="40%" height=" 40%">
+					   <h4>Allen</h4>
+                       <h4>Feb 2020 To Present</h4>
+					   <h4>Teaching</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="education">
+			<div class="education-heading center">	<i class="fas fa-university"></i>Education</div>
+			<div class="Education-timeline">
+				<div class="Education-divider">
+					<div class="Education-time-traveller"><i class="fas fa-car-side" style="font-size:2rem;"></i>
+					</div>
+				</div>
+				<div class="Education-box">
+					<img src="" alt="" width="px" height=" px">
+					<h3>High School 2004</h3><br>
+					<h5>International Public School</h5></br>
+					<h5>CGPA:10</h5>
+				</div>
+				<div class="Education-box">
+					<img src="" alt="" width="px" height=" px">
+					<h3>Intermediate 2013</h3><br>
+					<h5>International Public School</h5></br>
+					<h5>Percentage:89.5%</h5>
+				</div>
+				<div class="Education-box">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS-f1dYMMtPhTisWWj4HjRX9oa3eTz2swVeI6tPup5id_Xb3bkW" alt="" width="30%" height="30%">
+					<h3>B.E(CE) 2015-2019</h3><br>
+					<h5>Indian Institute of Technology Dhanbad(ISM)</h5></br>
+					<h5>CGPA:6.98</h5>
+				</div>
+				<div class="Education-box">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQwCoySfDbssrgAM6xihVWTXsFRV5lxO8IFgdIT2JjO1XKAtzOM" alt="" width="30%" height="30%" >
+					<h3>Programming Present</h3><br>
+					<h5>Coding Ninja</h5></br>
+				</div>
+			</div>
+			</div>
+		</section>
+		<section id="portfolio">
+			<div class="portfolio-heading center">	<i class="fas fa-folder-open"></i>Portfolio</div>
+			<div class="portfolio-img">
+				<a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQwD77felt5oDAoECpPydaijotfECk-ohhQE7FCxgdxy_0CRAF_" alt="" width="300px" height="250px"></a>
+			</div>
+			<div class="portfolio-img">
+				<a href=""><img src="https://www.bleepstatic.com/images/news/deals/misc/february-2017/original_sale_6708_image_wide-update[1].jpg" alt="" width="300px" height="250px"></a>
+			</div>
+			<div class="portfolio-img">
+				<a href=""><img src="https://cdn.epicbundle.com/image/post/2017/02/programming_languages_bootcamp_2017-400x225.jpg" alt="" width="300px" height="250px"></a>
+			</div>
+			<div class="portfolio-img">
+				<a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSxpp4vEq2UdnLtO5wz8s3R0Rf5vEluXplUm0dci2XO6CzHckRx" alt="" width="300px" height="250px"></a>
+			</div>
+			<div class="portfolio-img">
+				<a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRtXCdLJPrJpAfhEqyMdOPL0UEqfaZAVknMFlfkvWPXCydLvY11" alt="" width="300px" height="250px"></a>
+			</div>
+			<div class="portfolio-img">
+				<a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTq_lSISncATHhc0yxJ239ncH6jpnF6epF5DyUuCHE56doOFn55" alt="" width="300px" height="250px"></a>
+			</div>
+		</section>
+		<footer id="contacts">
+			<div class="contacts-heading center">	<i class="far fa-address-card"></i>Contacts</div>
+			<div class="form">
+				<form>
+					<input type="text" placeholder="Your Name" max="10">
+					<br>
+					<input type="email" placeholder="Your Email" required="">
+					<br>
+					<textarea placeholder="Message"></textarea>
+					<br>
+					<input type="submit" name="Send Message" value="Send Message">
+				</form> <span>
+      Get In Touch<br>
+      Vashisth Malik<br>
+        <h7>My Address</h7></br>
+        <i class="fas fa-map-marker-alt"></i>Meerut,India<br>
+        <i class="fas fa-mobile"></i>8077975459<br>
+        <i class="fas fa-envelope-open-text"></i>vashi.15je001780@ce.ism.ac.in<br>
+      </span>
+				<div class="social center">
+					<ul>
+						<li><a href="https://stackexchange.com/users/13733624/vashi"><i class="fab fa-stack-overflow"></i></a>
+						</li>
+						<li><a href="https://github.com/Vashi050197"><i class="fab fa-github-square"></i></a>
+						</li>
+						<li><a href="https://in.linkedin.com/in/vashisth-malik"><i class="fab fa-linkedin"></i></a>
+						</li>
+						<li><a href="https://www.facebook.com/vashu.malik.90"><i class="fab fa-facebook-square"></i></a>
+						</li>
+						<li><a href="vashi.15je001780@ce.ism.ac.in"><i class="fab fa-google-plus-g"></i></a>
+						</li>
+						<li><a href="https://www.quora.com/profile/Vashisth-Malik"><i class="fab fa-quora"></i></a>
+				</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<main></main>
+</body>
+
+</html>
